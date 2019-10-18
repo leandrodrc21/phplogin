@@ -1,8 +1,8 @@
 <?php
 $servername = "mysql";
 $database = "miphp";
-$username = "php";
-$password = "12345678";
+$username = "root";
+$password = "134679";
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $database);
 // Check connection
