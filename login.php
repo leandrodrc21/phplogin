@@ -1,6 +1,6 @@
 <?php
 $servername = "localhost";
-$database = "miphp";
+$database = "users";
 $username = "php";
 $password = "12345678";
 // Create connection
