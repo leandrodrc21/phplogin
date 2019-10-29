@@ -1,7 +1,7 @@
 <?php
 // Connection variables
-$dbhost	= "mysql";	   // localhost or IP
-$dbuser	= "root";		  // database username
-$dbpass	= "mypass";		     // database password
+$dbhost	= "mysqld";	   // localhost or IP
+$dbuser	= "php";		  // database username
+$dbpass	= "12345678";		     // database password
 $dbname	= "miphp";    // database name
 ?>
