@@ -13,11 +13,11 @@ $dbuser = getenv("MYSQL_USER");
 $dbpass = getenv("MYSQL_PASSWORD");
 $dbname =   getenv("MYSQL_DATABASE");
 
-echo  $dbhost;
-echo  $port;
-echo  $user;
-echo  $pass;
-echo  $db;
+echo  $dbhost."<br>";
+echo  $port."<br>";
+echo  $dbuser."<br>";
+echo  $dbpass."<br>";
+echo  $dbname."<br>";
 
 $con=mysqli_connect($dbhost,$dbuser,$dbpass,$dbname);
 
