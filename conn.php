@@ -13,7 +13,6 @@ $dbuser = getenv("MYSQL_USER");
 $dbpass = getenv("MYSQL_PASSWORD");
 $dbname =   getenv("MYSQL_DATABASE");
 
- $dbhost, $dbuser, $dbpass, $dbname
 echo  $dbhost;
 echo  $port;
 echo  $user;
