@@ -9,7 +9,7 @@ $dbhost = getenv("MYSQL_SERVICE_HOST");
 $port = getenv("MYSQL_SERVICE_PORT");
 $dbuser = getenv("databaseuser");
 $dbpass = getenv("databasepassword");
-$dbname= getenv("databasename");
+$dbname	= "miphp"; 
 $con=mysqli_connect($dbhost,$dbuser,$dbpass,$dbname);
 if(!$con)
 {
