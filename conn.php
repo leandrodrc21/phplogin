@@ -5,13 +5,13 @@ $dbuser	= "php";		  // database username
 $dbpass	= "12345678";		     // database password
 $dbname	= "miphp";    // database name*/
 
-$host = getenv("MYSQL_SERVICE_HOST");
+$dbhost = getenv("MYSQL_SERVICE_HOST");
 $port = getenv("MYSQL_SERVICE_PORT");
-$user = getenv("databaseuser");
-$pass = getenv("databasepassword");
-$db="problem";
+$dbuser = getenv("databaseuser");
+$dbpass = getenv("databasepassword");
+$dbname="problem";
 
-$con=mysqli_connect($host,$user,$pass,$db);
+$con=mysqli_connect($dbhost,$dbuser,$dbpass,$dbname);
 if(!$con)
 {
 	print("Not Connected<br>".mysql_error());
