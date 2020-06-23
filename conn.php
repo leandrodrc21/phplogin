@@ -7,20 +7,20 @@ $dbname	= "miphp";    // database name*/
 
 
 
-$host = getenv("MYSQL_SERVICE_HOST");
+$dbhost = getenv("MYSQL_SERVICE_HOST");
 $port = getenv("MYSQL_SERVICE_PORT");
-$user = getenv("MYSQL_USER");
-$pass = getenv("MYSQL_PASSWORD");
-$db =   getenv("MYSQL_DATABASE");
+$dbuser = getenv("MYSQL_USER");
+$dbpass = getenv("MYSQL_PASSWORD");
+$dbname =   getenv("MYSQL_DATABASE");
 
- 
-echo  $host;
+ $dbhost, $dbuser, $dbpass, $dbname
+echo  $dbhost;
 echo  $port;
 echo  $user;
 echo  $pass;
 echo  $db;
 
-$con=mysqli_connect($host,$user,$pass,$db);
+$con=mysqli_connect($dbhost,$dbuser,$dbpass,$dbname);
 
 if(!$con)
 {
