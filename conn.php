@@ -9,8 +9,7 @@ $dbhost = getenv("MYSQL_SERVICE_HOST");
 $port = getenv("MYSQL_SERVICE_PORT");
 $dbuser = getenv("databaseuser");
 $dbpass = getenv("databasepassword");
-$dbname="problem";
-
+$dbname= getenv("databasename");
 $con=mysqli_connect($dbhost,$dbuser,$dbpass,$dbname);
 if(!$con)
 {
